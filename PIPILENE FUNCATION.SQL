@@ -23,7 +23,7 @@ create or replace TYPE  Request_of_bank_statement_TYPE AS TABLE  OF Request_of_b
 --3)   phir hm function banaty han ur funcation me hm type ki jga type ur object ki jga object pass krty han 
 
 CREATE OR REPLACE FUNCTION REQ_BANK_STATEMENT (   <-- ye function ka name ha 
-    p_org_id IN NUMBER                             <-- ye hm ne p_org_id ko number me promt diya ha 
+    p_org_id IN NUMBER                             <-- ye hm ne p_org_id ko number me promt diya ha -- YAHA HUM PARAMETERS DATY HN JO AK SA ZADA BHI HO SAKTY HN JASY DATE RANGE  
 ) RETURN Request_of_bank_statement_TYPE PIPELINED      <-- ye wo type ha jo hm ne uppar bani ha ur ye type object sy data fatch krti ha 
 AS
 BEGIN
