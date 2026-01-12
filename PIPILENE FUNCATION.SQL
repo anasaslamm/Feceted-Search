@@ -16,6 +16,10 @@ create or replace TYPE Request_of_bank_statement AS OBJECT (
       STATUS varchar2(10)
 );
 
+--NOTE--
+1.1) AGR APNA KOI COLUMN ADD KRNA HA PURA PACAKE BANANY KA BAD TO OBJ DROP HOGA DUBARA TYPE BANAY GA 
+
+
 -- 2) us ke baad hm type banaty han  us type me pehly hm type ur phir object dety hn , is ki wja sy ye ke wo type jo hm ne banai ha wo object me sy data fatch krti ha 
 
 create or replace TYPE  Request_of_bank_statement_TYPE AS TABLE  OF Request_of_bank_statement
